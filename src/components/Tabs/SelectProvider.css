@@ -1,0 +1,11 @@
+:where(.css-dev-only-do-not-override-36gkoj).ant-slider-horizontal .ant-slider-track, :where(.css-dev-only-do-not-override-36gkoj).ant-slider-horizontal .ant-slider-tracks {
+    height: 4px;
+    background-color: #FA8800;
+}
+
+
+:where(.css-dev-only-do-not-override-36gkoj).ant-pagination .ant-pagination-item-active {
+    font-weight: 600;
+    background-color: #85CCFF;
+    border-color: #1677ff;
+}

@@ -1,0 +1,57 @@
+/* Customizing active step color and line */
+.ant-steps-item-active .ant-steps-item-icon {
+  background-color: orange !important; /* Orange for active step */
+  border-color: orange !important;
+}
+
+/* Inactive step number background color */
+.ant-steps-item-icon {
+  background-color: orange !important; /* Orange for inactive steps */
+  border-color: orange !important; /* Border color */
+}
+
+/* Set the text color inside the step number to white */
+.ant-steps-item-icon .ant-steps-icon {
+  color: #fff !important; /* White text color */
+}
+
+/* Line color between steps */
+.ant-steps-item-tail {
+  border-color: orange !important; /* Orange line color */
+}
+
+/* Processed steps (already completed) */
+.ant-steps .ant-steps-item-process .ant-steps-item-icon {
+  background-color: orange !important; /* Orange for processed steps */
+  border-color: orange !important;
+  color: #fff !important; /* White text for processed steps */
+}
+
+/* Hover effect for each step */
+.ant-steps-item:hover .ant-steps-item-icon {
+  background-color: #FA8800 !important; /* Light orange on hover */
+  color: #fff !important; /* Ensure text color stays white on hover */
+}
+
+/* Specific state for inactive steps when hovered */
+:where(.css-dev-only-do-not-override-1x0dypw).ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process)>.ant-steps-item-container[role='button']:hover .ant-steps-item-icon .ant-steps-icon {
+  color: #fff !important; /* Ensure text is white even on hover */
+}
+
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-steps .ant-steps-item-title::after {
+    position: absolute;
+    top: 12px;
+    inset-inline-start: 100%;
+    display: block;
+    width: 9999px;
+    height: 8px; /* Line thickness */
+   background: var(--Gray-2, #E5E7EB);
+    content: "";
+    border-radius: 4px; /* Slightly larger radius for more roundness */
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after {
+    background-color: #FA8800;
+}
+

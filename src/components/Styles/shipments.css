@@ -1,0 +1,17 @@
+/* styles.css */
+.ant-tabs-nav .ant-tabs-tab {
+  color: #6B7280 !important; /* Inactive tab color */
+}
+
+
+:where(.css-dev-only-do-not-override-36gkoj).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #FA8800;
+    text-shadow: 0 0 0.25px currentcolor;
+}
+
+
+:where(.css-dev-only-do-not-override-36gkoj).ant-tabs .ant-tabs-ink-bar {
+    position: absolute;
+    background: #FA8800;
+    pointer-events: none;
+}
